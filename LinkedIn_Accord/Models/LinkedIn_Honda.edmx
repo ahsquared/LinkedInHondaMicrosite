@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="LinkedIn_HondaModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="LinkedIn_HondaModelStoreContainer">
+          <EntitySet Name="Entries" EntityType="LinkedIn_HondaModel.Store.Entries" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="Entries">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="LinkedInId" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="ImageUrl" Type="varchar" MaxLength="255" />
+          <Property Name="OriginalThinkerLinkedInId" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="OriginalThinkerName" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="OriginalThinkerPoints" Type="int" Nullable="false" />
+          <Property Name="OriginalThinkerImageUrl" Type="varchar" MaxLength="255" />
+          <Property Name="SocialButterflyLinkedInId" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="SocialButterflyName" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="SocialButterflyPoints" Type="int" Nullable="false" />
+          <Property Name="SocialButterflyImageUrl" Type="varchar" MaxLength="255" />
+          <Property Name="DiplomatLinkedInId" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="DiplomatName" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="DiplomatPoints" Type="int" Nullable="false" />
+          <Property Name="DiplomatImageUrl" Type="varchar" MaxLength="255" />
+          <Property Name="DependableLinkedInId" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="DependableName" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="DependablePoints" Type="int" Nullable="false" />
+          <Property Name="DependableImageUrl" Type="varchar" MaxLength="255" />
+          <Property Name="HighAchieverLinkedInId" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="HighAchieverName" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="HighAchieverPoints" Type="int" Nullable="false" />
+          <Property Name="HighAchieverImageUrl" Type="varchar" MaxLength="255" />
+          <Property Name="Offers" Type="bit" Nullable="false" />
+          <Property Name="AgreedTerms" Type="bit" Nullable="false" />
+          <Property Name="TotalPoints" Type="int" Nullable="false" />
+          <Property Name="PostUpdate" Type="bit" Nullable="false" />
+          <Property Name="ProfileUrl" Type="varchar" MaxLength="255" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="LinkedIn_HondaModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="LinkedIn_HondaEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Entries" EntityType="LinkedIn_HondaModel.Entry" />
+        </EntityContainer>
+        <EntityType Name="Entry">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LinkedInId" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ImageUrl" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="OriginalThinkerLinkedInId" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="OriginalThinkerName" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="OriginalThinkerPoints" Type="Int32" Nullable="false" />
+          <Property Name="OriginalThinkerImageUrl" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="SocialButterflyLinkedInId" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SocialButterflyName" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="SocialButterflyPoints" Type="Int32" Nullable="false" />
+          <Property Name="SocialButterflyImageUrl" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="DiplomatLinkedInId" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DiplomatName" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="DiplomatPoints" Type="Int32" Nullable="false" />
+          <Property Name="DiplomatImageUrl" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="DependableLinkedInId" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DependableName" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="DependablePoints" Type="Int32" Nullable="false" />
+          <Property Name="DependableImageUrl" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="HighAchieverLinkedInId" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="HighAchieverName" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="HighAchieverPoints" Type="Int32" Nullable="false" />
+          <Property Name="HighAchieverImageUrl" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Offers" Type="Boolean" Nullable="false" />
+          <Property Name="AgreedTerms" Type="Boolean" Nullable="false" />
+          <Property Name="TotalPoints" Type="Int32" Nullable="false" />
+          <Property Name="PostUpdate" Type="Boolean" Nullable="false" />
+          <Property Name="ProfileUrl" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="LinkedIn_HondaModelStoreContainer" CdmEntityContainer="LinkedIn_HondaEntities">
+          <EntitySetMapping Name="Entries">
+            <EntityTypeMapping TypeName="LinkedIn_HondaModel.Entry">
+              <MappingFragment StoreEntitySet="Entries">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="LinkedInId" ColumnName="LinkedInId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+                <ScalarProperty Name="OriginalThinkerLinkedInId" ColumnName="OriginalThinkerLinkedInId" />
+                <ScalarProperty Name="OriginalThinkerName" ColumnName="OriginalThinkerName" />
+                <ScalarProperty Name="OriginalThinkerPoints" ColumnName="OriginalThinkerPoints" />
+                <ScalarProperty Name="OriginalThinkerImageUrl" ColumnName="OriginalThinkerImageUrl" />
+                <ScalarProperty Name="SocialButterflyLinkedInId" ColumnName="SocialButterflyLinkedInId" />
+                <ScalarProperty Name="SocialButterflyName" ColumnName="SocialButterflyName" />
+                <ScalarProperty Name="SocialButterflyPoints" ColumnName="SocialButterflyPoints" />
+                <ScalarProperty Name="SocialButterflyImageUrl" ColumnName="SocialButterflyImageUrl" />
+                <ScalarProperty Name="DiplomatLinkedInId" ColumnName="DiplomatLinkedInId" />
+                <ScalarProperty Name="DiplomatName" ColumnName="DiplomatName" />
+                <ScalarProperty Name="DiplomatPoints" ColumnName="DiplomatPoints" />
+                <ScalarProperty Name="DiplomatImageUrl" ColumnName="DiplomatImageUrl" />
+                <ScalarProperty Name="DependableLinkedInId" ColumnName="DependableLinkedInId" />
+                <ScalarProperty Name="DependableName" ColumnName="DependableName" />
+                <ScalarProperty Name="DependablePoints" ColumnName="DependablePoints" />
+                <ScalarProperty Name="DependableImageUrl" ColumnName="DependableImageUrl" />
+                <ScalarProperty Name="HighAchieverLinkedInId" ColumnName="HighAchieverLinkedInId" />
+                <ScalarProperty Name="HighAchieverName" ColumnName="HighAchieverName" />
+                <ScalarProperty Name="HighAchieverPoints" ColumnName="HighAchieverPoints" />
+                <ScalarProperty Name="HighAchieverImageUrl" ColumnName="HighAchieverImageUrl" />
+                <ScalarProperty Name="Offers" ColumnName="Offers" />
+                <ScalarProperty Name="AgreedTerms" ColumnName="AgreedTerms" />
+                <ScalarProperty Name="TotalPoints" ColumnName="TotalPoints" />
+                <ScalarProperty Name="PostUpdate" ColumnName="PostUpdate" />
+                <ScalarProperty Name="ProfileUrl" ColumnName="ProfileUrl" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

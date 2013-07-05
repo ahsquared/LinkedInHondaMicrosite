@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Title = "PointDetail";
+}
+<script>
+    function loadDataFn() {
+        loadData();
+    }
+</script>
+<script type="IN/Login" data-onauth="loadDataFn"></script>
+<div class="content" id="confirmation">
+    <h2 class="light">Explanation of point calculation</h2>
+    <table id="point-calc-table">
+        <thead>
+            <tr>
+                <th>Team Role</th>
+                <th>Formula</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>High Achiever</td>
+                <td>(Number of current Positions x 500) + 25<br />
+                    EXAMPLE: 2 Positions = (2 x 500) + 25 = 1025
+                </td>
+            </tr>
+            <tr>
+                <td>Original Thinker</td>
+                <td>(Number of characters and spaces in their Headline x 20) + 20<br />
+                    EXAMPLE: Joe Blogs at Honda Australia = (28 x 20) + 20 = 580
+                </td>
+            </tr>
+            <tr>
+                <td>Social Butterfly</td>
+                <td>(Number of hours/days/months/years since their last post) refer to the calculations below:<br />
+                    If last posted in the last 24 hours, then calculation is: <br/>&nbsp;&nbsp;&nbsp;(1441 &minus; minutes / 1440) x 500 + 1500<br />
+                    If last posted in the last 30 days, then calculation is: <br/>&nbsp;&nbsp;&nbsp;(31 &minus; days / 30) x 500 + 1000<br />
+                    If last posted in the last 12 months, then calculation is: <br/>&nbsp;&nbsp;&nbsp;(13 &minus; months / 12) x 500 + 500<br />
+                    If last posted over 1 year ago and less than 5 years ago, then points: <br/>&nbsp;&nbsp;&nbsp;(6 &minus; years / 5) x 500
+
+                </td>
+            </tr>
+            <tr>
+                <td>Dependable</td>
+                <td>(Number of years spent at a current company x 75) + 100<br />
+                    EXAMPLE: 8 years = (8 x 75) + 100 = 700
+                </td>
+            </tr>
+            <tr>
+                <td>Diplomat</td>
+                <td>(Number of international branches in the company they work for x 20) + 100<br />
+                    EXAMPLE: 5 International branches = (5 x 20) + 100 = 200
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="/" class="button back">BACK</a>
+</div>
+

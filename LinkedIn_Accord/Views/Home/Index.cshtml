@@ -1,0 +1,379 @@
+﻿@{
+    ViewBag.Title = "Honda Accord A-Team";
+}
+<div class="content" id="home">
+    <h1 class="light">THE A-TEAM</h1>
+    <p class="light">
+        Will your LinkedIn contacts help you build an Accord A-Team that has it all?  All the cleverness, charm, charisma, originality and leadership to be crowned the most impressive collection of professionals in Australia?  All you have to do is select the position that best describes you.  Then decide which of your professional contacts are best suited to fill the remaining four positions to potentially give you the strongest, most impressive A-Team.  To win, your goal is to score the highest number of points by picking an A-Team most aligned with the positions. 
+    </p>
+    <p class="linkedin-signin">
+        <script>
+            function loadDataFn() {
+                $.post('@Request.Url.GetLeftPart(UriPartial.Authority)/home/auth');
+                loadData();
+            }
+        </script>
+        <script type="IN/Login" data-onauth="loadDataFn"></script>
+
+    </p>
+    <div class="car">
+        <div class="model">V6L model shown</div>
+    </div>
+</div>
+
+<div class="content" id="contest">
+    <h1 class="light">THE A-TEAM</h1>
+    <p class="light">
+        Will your LinkedIn contacts help you build an Accord A-Team that has it all?  All the cleverness, charm, charisma, originality and leadership to be crowned the most impressive collection of professionals in Australia?  All you have to do is select the position that best describes you.  Then decide which of your professional contacts are best suited to fill the remaining four positions to potentially give you the strongest, most impressive A-Team.  To win, your goal is to score the highest number of points by picking an A-Team most aligned with the positions. 
+
+    </p>
+    <h2 class="light">1. Pick your position by clicking on one of the red circles</h2>
+    <h2 class="light">2. Pick your A-Team positions</h2>
+    <div class="car">
+        <div id="high-achiever" class="hot-spot">
+            <div class="info-wrap">
+                <div class="info">
+                    <h2>HIGH ACHIEVER</h2>
+                    <p>
+                        3.5 litre SOHC i-VTEC<br />
+                        V6 engine
+                    </p>
+                </div>
+                <img src="/Content/img/high-achiever.jpg" alt="image of engine" />
+                <a href="#" class="select" data-id="high-achiever">SELECT YOUR A-TEAM</a>
+                <div class="arrow"></div>
+            </div>
+        </div>
+        <div id="dependable" class="hot-spot">
+            <div class="info-wrap">
+                <div class="info">
+                    <h2>DEPENDABLE</h2>
+                    <p>
+                        Dusk-sensing auto headlights<br />
+                        Rain-sensing auto front wipers
+                    </p>
+                </div>
+                <img src="/Content/img/dependable.jpg" alt="image of headlight" />
+                <a href="#" class="select" data-id="dependable">SELECT YOUR A-TEAM</a>
+                <div class="arrow"></div>
+            </div>
+        </div>
+        <div id="diplomat" class="hot-spot">
+            <div class="info-wrap">
+                <div class="info">
+                    <h2>DIPLOMAT</h2>
+                    <p>
+                        Active Noise Control (ANC)<br />
+                        i-Dual zone climate control with rear vents
+                    </p>
+                </div>
+                <img src="/Content/img/diplomat.jpg" alt="image of temperature controls" />
+                <a href="#" class="select" data-id="diplomat">SELECT YOUR A-TEAM</a>
+                <div class="arrow"></div>
+            </div>
+        </div>
+        <div id="social-butterfly" class="hot-spot">
+            <div class="info-wrap">
+                <div class="info">
+                    <h2>SOCIAL BUTTERFLY</h2>
+                    <p>
+                        Bluetooth &reg; phone and audio connectivity<br />
+                        Smart keyless entry and push button start
+                    </p>
+                </div>
+                <img src="/Content/img/social-butterfly.jpg" alt="image of radio controls" />
+                <a href="#" class="select" data-id="social-butterfly">SELECT YOUR A-TEAM</a>
+                <div class="arrow"></div>
+            </div>
+        </div>
+        <div id="original-thinker" class="hot-spot">
+            <div class="info-wrap">
+                <div class="info">
+                    <h2>Original Thinker</h2>
+                    <p>
+                        Collision Mitigation Braking System (CMBS)<br />
+                        Adaptive Cruise Control (ACC)<br />
+                        Lane Keep Assist System (LKAS)
+                    </p>
+                </div>
+                <img src="/Content/img/original-thinker.jpg" alt="image of car following another" />
+                <a href="#" class="select" data-id="original-thinker">SELECT YOUR A-TEAM</a>
+                <div class="arrow"></div>
+            </div>
+        </div>
+        <div id="spot-pulses"></div>
+        <div class="model">V6L model shown</div>
+    </div>
+</div>
+<div class="content" id="choose-me">
+    <div class="popup cf">
+        <h1>Select which trait best describes you<span class="close">X</span></h1>
+        <div class="you-info cf">
+            <img class="headshot" src="/Content/img/blank-user-pic.png" alt=""/>
+            <div class="title">
+                <h2></h2>
+                <p></p>
+            </div>
+        </div>
+        <div class="member-type high-achiever">
+            <div class="tick"></div>
+            <h2>High Achiever</h2>
+            <img src="~/Content/img/high-achiever-summary-small.jpg" alt=""/>
+            <p>Assertive and powerful, like the 3.5 litre SOHC i-VTEC V6 engine, you are at the ready to take on any challenge. Intelligent, charming, and eternally well-groomed, you've always found it easy to navigate the roads with the sort of poise and confidence few can imitate.</p>
+        </div>
+        <div class="member-type diplomat">
+            <div class="tick"></div>
+            <h2>Diplomat</h2>
+            <img src="~/Content/img/diplomat-summary-small.jpg" alt=""/>
+            <p>You can keep your cool in any situation, aided by the i-Dual zone climate control with rear vents. People know to trust you, just like they do the Lane Watch blind spot monitoring system. You are diligent and level-headed, appearing relaxed in any situation – made particularly easy when sitting under your very own electric sunroof.</p>
+        </div>
+        <div class="member-type dependable">
+            <div class="tick"></div>
+            <h2>Dependable</h2>
+            <img src="~/Content/img/dependable-summary-small.jpg" alt=""/>
+            <p>You are a well-organised individual, sensing change and adapting to your environment, just like the Accord's dusk-sensing auto headlights and rain-sensing wipers. Your attention to detail is second-to-none, picking up on the smallest problems and selflessly pitching in to solve them.</p>
+        </div>
+        <div class="member-type original-thinker">
+            <div class="tick"></div>
+            <h2>Original Thinker</h2>
+            <img src="~/Content/img/original-thinker-summary-small.jpg" alt=""/>
+            <p>Flexible, compliant, and perhaps a bit quirky, you are a visionary creative who always thinks ahead. Your quick intuition helps you navigate through potential hazards seamlessly, just like the revolutionary Advanced Driver Assist System on the all-new Honda Accord. You will always get great results because of your obsession for innovation.</p>
+        </div>
+        <div class="member-type social-butterfly">
+            <div class="tick"></div>
+            <h2>Social Butterfly</h2>
+            <img src="~/Content/img/social-butterfly-summary-small.jpg" alt=""/>
+            <p>You are an outgoing individual who cleverly manoeuvres the social ecosphere. And because you love conversation, you'll love the Active Noise Control technology in the Accord – an advanced feature that counteracts obstructive outside noise. Bluetooth &reg; phone and audio connectivity effortlessly keep you connected to your world.</p>
+        </div>
+        <div class="action">
+            <img src="~/Content/img/honda-accord-med.jpg" alt="image of Honda Accord" />
+            <a href="#" id="select-me" class="button two-line">Select Your<br />
+                A-Team</a>
+        </div>
+    </div>
+</div>
+<div class="content" id="choose-team">
+    <div class="popup cf">
+        <h1 class="instructions">Select your A-Team
+            <span>1. Select your trait<br />
+                2. Pick your team member</span>
+        </h1>
+        <div class="filter cf">
+            <label>Browse your connections to handpick your foursome.</label>
+            <input type="text" id="name-filter" />
+            <a id="name-filter-btn" class="search" href="#">Search</a>
+        </div>
+        <div id="members">
+            <div class="member">
+                <div class="headshot">
+                </div>
+                <div class="member-info">
+                    <h2>High Achiever</h2>
+                    <p>Assertive and powerful, like the 3.5 litre SOHC i-VTEC V6 engine, you are at the ready to take on any challenge. Intelligent, charming, and eternally well-groomed, you've always found it easy to navigate the roads with the sort of poise and confidence few can imitate.</p>
+                </div>
+            </div>
+            <div class="member">
+                <div class="headshot">
+                </div>
+                <div class="member-info">
+                    <h2>Diplomat</h2>
+                    <p>You can keep your cool in any situation, aided by the i-Dual zone climate control with rear vents. People know to trust you, just like they do the Lane Watch blind spot monitoring system. You are diligent and level-headed, appearing relaxed in any situation – made particularly easy when sitting under your very own electric sunroof.</p>
+                </div>
+            </div>
+            <div class="member">
+                <div class="headshot">
+                </div>
+                <div class="member-info">
+                    <h2>Dependable</h2>
+                    <p>You are a well-organised individual, sensing change and adapting to your environment, just like the Accord's dusk-sensing auto headlights and rain-sensing wipers. Your attention to detail is second-to-none, picking up on the smallest problems and selflessly pitching in to solve them.</p>
+                </div>
+            </div>
+            <div class="member">
+                <div class="headshot">
+                </div>
+                <div class="member-info">
+                    <h2>Original Thinker</h2>
+                    <p>Flexible, compliant, and perhaps a bit quirky, you are a visionary creative who always thinks ahead. Your quick intuition helps you navigate through potential hazards seamlessly, just like the revolutionary Advanced Driver Assist System on the all-new Honda Accord. You will always get great results because of your obsession for innovation.</p>
+                </div>
+            </div>
+            <div class="member">
+                <div class="headshot">
+                </div>
+                <div class="member-info">
+                    <h2>Social Butterfly</h2>
+                    <p>You are an outgoing individual who cleverly manoeuvres the social ecosphere. And because you love conversation, you'll love the Active Noise Control technology in the Accord – an advanced feature that counteracts obstructive outside noise. Bluetooth &reg; phone and audio connectivity effortlessly keep you connected to your world.</p>
+                </div>
+            </div>
+        </div>
+        <div id="connections" class="cf">
+            <div id="connection-filter">
+                <img src="~/Content/img/linkedin-logo-small.png" alt="LinkedIn Logo" />
+                <span>Filter Your Network: </span>
+                <a href="#" class="blue active" id="all-connections">All</a><span class="blue"> | </span>
+                <a href="#" class="blue" id="colleagues-connections">Colleagues</a><span class="blue"> | </span>
+                <a href="#" class="blue" id="location-connections">Location</a>
+            </div>
+        </div>
+        <a href="#" class="button floatright" id="done">DONE</a>
+        <p id="duplicate-warning">You can't have one person filling more than one role. Please revise your submission.</p>
+    </div>
+</div>
+<div class="content" id="contest-filled">
+    <div class="white-box">
+        <h1>Is this your final selection?<br />
+            Does this A-Team have it all?</h1>
+        <p>
+            Submit to see how your team stacks up,<br />
+            and how you really could have it all with the all-new Honda Accord.
+        </p>
+    </div>
+    <div class="car">
+        <div id="high-achiever-filled" class="hot-spot">
+            <div class="member-wrap">
+                <div class="bubble-wrap">
+                    <div class="bubble">
+                    </div>
+                </div>
+                <div class="member">
+                    <h2>High Achiever</h2>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div id="dependable-filled" class="hot-spot">
+            <div class="member-wrap">
+                <div class="bubble-wrap">
+                    <div class="bubble">
+                    </div>
+                </div>
+                <div class="member">
+                    <h2>Dependable</h2>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div id="diplomat-filled" class="hot-spot">
+            <div class="member-wrap">
+                <div class="bubble-wrap">
+                    <div class="bubble">
+                    </div>
+                </div>
+                <div class="member left-side">
+                    <h2>Diplomat</h2>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div id="social-butterfly-filled" class="hot-spot">
+            <div class="member-wrap">
+                <div class="bubble-wrap">
+                    <div class="bubble">
+                    </div>
+                </div>
+                <div class="member left-side">
+                    <h2>Social Butterfly</h2>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div id="original-thinker-filled" class="hot-spot">
+            <div class="member-wrap">
+                <div class="bubble-wrap">
+                    <div class="bubble">
+                    </div>
+                </div>
+                <div class="member left-side">
+                    <h2>Original Thinker</h2>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="model">V6L model shown</div>
+    </div>
+    <div class="buttons cf submit-container">
+        <div class="check-container">
+            <input type="checkbox" id="emails" /><label for="emails">I would like to receive emails and special offers from Honda.</label>
+        </div>
+        <div class="check-container">
+            <input type="checkbox" id="agree" /><label for="agree">I have read and agree to the
+                                                    <a href="#" class="popup-link" data-id="tandc">Terms and Conditions</a>.</label>
+        </div>
+        <div class="check-container">
+            <input type="checkbox" id="post" checked="checked"/><label for="post">Share this Honda A-Team competition to my LinkedIn.</label>
+        </div>
+        <p class="agree-warning">Please agree to the
+            <a href="#" class="popup-link" data-id="tandc">Terms and Conditions</a>
+            to submit your entry</p>
+        <a href="#" id="reset" class="button floatleft clear">RESET</a>
+        <a href="#" id="submit" class="button floatleft">Submit your A-Team</a>
+    </div>
+</div>
+<div class="content" id="invite">
+    <div id="invite-content">
+        <div class="close">x</div>
+        <h1>Notify your A-Team members</h1>
+        <p>Recruit the very best in your contact list for your chance to win.</p>
+        <div class="borders">
+            <img src="~/Content/img/linkedin-logo-small.png" alt="LinkedIn Logo"/><strong>Notify via LinkedIn</strong>
+        </div>
+        <div class="padding">
+            <h3>Send Notification To:</h3>
+            <div class="connection">
+                <div class="headshot">
+                </div>
+                <div class="connection-info">
+                </div>
+            </div>
+            <div class="connection">
+                <div class="headshot">
+                </div>
+                <div class="connection-info">
+                </div>
+            </div>
+            <div class="connection">
+                <div class="headshot">
+                </div>
+                <div class="connection-info">
+                </div>
+            </div>
+            <div class="connection">
+                <div class="headshot">
+                </div>
+                <div class="connection-info">
+                </div>
+            </div>
+            <label>SUBJECT:</label>
+            <input type="text" id="subject" value="I picked you to be part of my A-Team" />
+            <label>ADD A PERSONAL MESSAGE:</label>
+            <textarea id="message">You're one of four people I personally selected to be part of my Honda Accord A-Team. Using my LinkedIn contacts I have built a team that has all the cleverness, charm, innovation, confidence and professional endorsement for a chance to be crowned the A-Team of Australia. Join me and build your very own Accord A-Team to be in the running to win Business Technology Products valued at $3000.
+https://hondaaccordateam.com.au/
+            </textarea>
+            <a href="#" class="send-invite-btn">SEND NOTIFICATION</a>
+            <a href="#" class="cancel">Don't alert my team</a>
+        </div>
+    </div>
+
+</div>
+<form action="/" method="post" id="form-entry" style="display: none;">
+<input id="LinkedInId" name="LinkedInId" type="text" />
+<input id="ProfileUrl" name="ProfileUrl" type="text" />
+<input id="Name" name="Name" type="text" />
+<input class="team-field" id="OriginalThinkerLinkedInId" name="OriginalThinkerLinkedInId" type="text" />
+<input class="team-field" id="OriginalThinkerName" name="OriginalThinkerName" type="text" />
+@*<input id="OriginalThinkerPoints" name="OriginalThinkerPoints" type="text" />*@
+<input class="team-field" id="SocialButterflyLinkedInId" name="SocialButterflyLinkedInId" type="text" />
+<input class="team-field" id="SocialButterflyName" name="SocialButterflyName" type="text" />
+@*<input id="SocialButterflyPoints" name="SocialButterflyPoints" type="text" />*@
+<input class="team-field" id="DiplomatLinkedInId" name="DiplomatLinkedInId" type="text" />
+<input class="team-field" id="DiplomatName" name="DiplomatName" type="text" />
+@*<input id="DiplomatPoints" name="DiplomatPoints" type="text" />*@
+<input class="team-field" id="DependableLinkedInId" name="DependableLinkedInId" type="text" />
+<input class="team-field" id="DependableName" name="DependableName" type="text" />
+@*<input id="DependablePoints" name="DependablePoints" type="text" />*@
+<input class="team-field" id="HighAchieverLinkedInId" name="HighAchieverLinkedInId" type="text" />
+<input class="team-field" id="HighAchieverName" name="HighAchieverName" type="text" />
+@*<input id="HighAchieverPoints" name="HighAchieverPoints" type="text" />*@
+<input class="team-field" id="Offers" name="Offers" type="checkbox" />
+<input class="team-field" id="AgreedTerms" name="AgreedTerms" type="checkbox" />
+<input class="team-field" id="PostUpdate" name="PostUpdate" type="checkbox" />
+</form>

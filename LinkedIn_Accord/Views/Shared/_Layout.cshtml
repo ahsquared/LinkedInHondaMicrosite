@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    @*Mobile viewport optimized: j.mp/bplateviewport *@
+    <meta name="viewport" content="width=980">
+    <meta property="og:title" content="Accord A-Team" />
+    <meta property="og:url" content="@Request.Url.GetLeftPart(UriPartial.Authority)"/>
+    <meta property="og:description" content="Share your ultimate Honda Accord A-Team and you could win Business Technology Products valued at $3k" />
+    <meta property="og:image" content="@Request.Url.GetLeftPart(UriPartial.Authority)/Content/img/honda-accord-fb.jpg"/>
+    <title>@ViewBag.Title</title>
+    <link href="/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link href="/Content/css/main.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://platform.linkedin.com/in.js">
+        api_key: s0pnibdnyjkv
+        authorize: true
+        scope: r_network r_basicprofile r_fullprofile w_messages rw_nus
+        credentials_cookie: true
+    </script>
+    @* This fixes html5 unknown tag problems in older versions of IE (pre IE9) *@
+    <!--[if lt IE 9]><script type="text/javascript" src="/Content/js/html5.js"></script><![endif]-->
+
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="container cf">
+                <h1>
+                    <a href="http://ad.au.doubleclick.net/clk;272457890;99533750;y">
+                        <img src="~/Content/img/all-new-accord.png" alt="All-NEW ACCORD" /></a></h1>
+                <h2>
+                    <a href="http://ad.au.doubleclick.net/clk;272457890;99533804;y">
+                        <img src="~/Content/img/honda-power-of-dreams.png" alt="HONDA The Power of Dreams" /></a></h2>
+                <h2 class="power-clever">
+                    <img src="~/Content/img/power-of-clever-thinking.png" alt="The Power of Clever Thinking" /></h2>
+            </div>
+            <div class="prize">
+                <h2>Win $3K worth of Business Technology Products*
+                    <img src="/Content/img/prizes.png" alt="image of iPad, iPhone, Headphones" />
+                </h2>
+            </div>
+        </header>
+        <div class="main">
+            <div class="container cf">
+                <nav id="main-nav">
+                    <ul>
+                        @*<li class="no-divider">
+                            <a href="#">
+                                <img src="~/Content/img/linkedin-logo.png" alt="LinkedIn" /></a></li>*@
+                        <li class="no-divider active cf">
+                            <img class="headshot" width="50" height="50" src="~/Content/img/blank-user-pic.png" alt=""/>
+                            <div class="user">
+                                <h1>Welcome</h1>
+                                <h2></h2>
+                                <a href="javascript:aSalmon.hondaDreamTeam.logout();">| Logout</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="http://ad.au.doubleclick.net/clk;273588531;99768251;c" target="_blank">Find a Dealer</a></li>
+                        <li>
+                            <a href="http://ad.au.doubleclick.net/clk;273445292;99533803;r" target="_blank">Request a<br />
+                                Test Drive</a></li>
+                        <li>
+                            <a href="http://ad.au.doubleclick.net/clk;273588568;99768249;t" target="_blank">Download Brochure</a></li>
+                        <li>
+                            <a href="http://ad.au.doubleclick.net/clk;272457890;99768250;d" target="_blank">Take a 360 Spin</a></li>
+                        <li class="no-divider">
+                            <span>Share</span>
+                            <div class="social-links">
+                                <!-- AddThis Button BEGIN -->
+                                <div class="toolbox-main addthis_toolbox addthis_default_style addthis_16x16_style">
+                                    <a class="addthis_button_linkedin" addthis:description="Share your ultimate Honda Accord A-Team and you could win Business Technology Products valued at $3k">
+                                        <img src="/Content/img/linkedin-icon.png" alt="Share to LinkedIn" /></a>
+                                    <a class="addthis_button_facebook" addthis:url="@Request.Url.GetLeftPart(UriPartial.Authority)">
+                                        <img src="/Content/img/fb-icon.png" alt="Share to Facebook" /></a>
+                                    <a class="addthis_button_twitter" addthis:title="Share your ultimate Honda Accord A-Team and you could win Business Technology Products valued at $3k" addthis:url="@Request.Url.GetLeftPart(UriPartial.Authority)">
+                                        <img src="/Content/img/tw-icon.png" alt="Share to Twitter" /></a>
+                                    <a class="addthis_button_email" addthis:ui_email_note="Share your ultimate Honda Accord A-Team and you could win Business Technology Products valued at $3k">
+                                        <img src="/Content/img/email-icon.png" alt="Share to Friends" /></a>
+                                </div>
+                                <!-- AddThis Button END -->
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                @RenderBody()
+                <div class="content" id="tandc">
+                    <div class="popup cf">
+                        <h1>Honda A-Team Competition
+                            <span class="close">X</span>
+                        </h1>
+
+                        <div class="scroll">
+                            <h2>Terms and Conditions</h2>
+                            <ol id="terms">
+                                <li>Information on how to enter and the prize forms part of these Terms and Conditions. Entry into the competition is deemed acceptance of these Terms and Conditions.</li>
+                                <li>Entry is open to Australian residents aged 18 years or over who hold a LinkedIn account ("Eligible Entrants").</li>
+                                <li>Employees (and their immediate families) of the Promoter and agencies associated with this promotion are ineligible to enter. Immediate family means any of the following: spouse, ex-spouse, de-facto spouse, child or step-child (whether natural or by adoption), parent, step-parent, grandparent, step-grandparent, uncle, aunt, niece, nephew, brother, sister, step-brother, step-sister or 1st cousin.</li>
+                                <li>The competition commences on Wednesday 26 June 2013 at 18:00 (AEST) and concludes on Tuesday 30 July 2013 at 23:59 (AEST) ("Promotional Period"). </li>
+                                <li>The competition will be advertised on
+                                    <a href="http://hondaaccordateam.com.au" target="_blank">hondaaccordateam.com.au</a>
+                                    and
+                                    <a href="http://linkedin.com" target="_blank">Linkedin.com</a></li>
+                                <li>To enter, Eligible Entrants must complete the following steps during the Promotional Period: 
+                    <ol>
+                        <li>Visit
+                            <a href="http://www.hondaaccordateam.com.au" target="_blank">www.hondaaccordateam.com.au</a>;</li>
+                        <li>Sign in using their existing LinkedIn account user name and password;</li>
+                        <li>Select their position within the A-Team;</li>
+                        <li>Select four (4) of their LinkedIn connections to occupy the remaining A-Team positions;</li>
+                        <li>Submit their final A-Team.</li>
+                    </ol>
+                                </li>
+                                <li>Each A-Team will be awarded points based on each team member's LinkedIn profile attributes. Full details of how points are awarded are located here:<br />
+                                    <a href="/Home/PointDetail">www.hondaaccordateam.com.au/pointdetail</a>
+                                </li>
+                                <li>Incomprehensible and incomplete entries will be deemed invalid.</li>
+                                <li>Entrants in the competition may enter as many times as they like.</li>
+                                <li>The Promoter reserves the right, at any time, to verify the validity of entrants (including an entrant's identity, age and place of residence). Identification considered suitable for verification is at the discretion of the Promoter.</li>
+                                <li>In the event that a winner cannot provide suitable proof, the winner will forfeit the prize in whole and no substitute will be offered.</li>
+                                <li>The Promoter reserves the right to verify the validity of entries and to disqualify any entry which, in the opinion of Promoter, includes objectionable content, profanity, potentially insulting, inflammatory or defamatory statements, disqualify any entrant who tampers with the entry process, who submits an entry that is not in accordance with these Terms & Conditions of Entry or who has, in the opinion of Promoter, engaged in conduct in entering the Promotion which is fraudulent, misleading, deceptive or generally damaging to the goodwill or reputation of the Promotion and/or Promoter. This includes, but is not limited to, entrants using multiple LinkedIn accounts  to submit more than one A-Team. The Promoter reserves the right to disqualify a winner if Promoter becomes aware that the winner and/or the winner's entry is of a type described in this clause.</li>
+                                <li>Entries must be received by 23:59 (AEST) on 30 July 2013.  The time of entry will in each case be the time the online entry is received by The Promoter's database. The Promoter accepts no responsibility for any late, lost or misdirected entries due to technical disruptions, network congestion or for any other reason. </li>
+                                <li>Any entry that is made on behalf of an Entrant by a third party will be invalid.</li>
+                                <li>The cost of accessing the promotional website will be dependent on the entrant's individual Internet Service Provider.</li>
+                                <li>The twenty (20) eligible entrants whose A-Team received the most points, as per clause 7, will be entered into the draw to win.  One (1) valid entrant will be drawn at random to become the winner. The draw will take place at Salmat Digital Pty Limited, Level 2, 116 Miller Street, North Sydney NSW 2060, on Wednesday 31 July 2013 at 16:00 (AEST). </li>
+                                <li>The winner will be notified within 2 days of the draw. The winner will be notified of their prize by email and will have their details published in the Public Notices section of The Australian newspaper on Wednesday 7 August 2013.  </li>
+                                <li>The Prize will be awarded to person named in the entry. However, in a dispute, will be awarded to the account holder of the entry mechanism used to submit their entry (i.e. LinkedIn).</li>
+                                <li>One (1) major prize winner will receive
+                    <ul>
+                        <li>A $3,000.00 gift voucher for Harvey Norman (valid for up to 12 months)</li>
+                    </ul>
+                                    Total prize pool is valued at $3,000.00 (including GST)
+                                </li>
+                                <li>Prize cannot be transferred or redeemed for cash. </li>
+                                <li>Unless expressly stated in these terms and conditions all other expenses become the responsibility of the winner.</li>
+                                <li>If the prize is unavailable, for whatever reason, The Promoter reserves the right to substitute the prize for a prize of equal or greater value, subject to State Regulation.</li>
+                                <li>Once the prize has left The Promoter's premises, the Promoter takes no responsibility for prize damage, delay or loss in transit.</li>
+                                <li>By accepting the prize, the winner agrees to participate in and co-operate as required with all reasonable media editorial requests relating to the prize, including but not limited to, being interviewed and photographed, filmed and/or chaperoned throughout the duration of the prize. </li>
+                                <li>In consideration for The Promoter awarding the prize to the winner, the winner hereby permits the winner's image and/or voice, as recorded, photographed or filmed during the winner's participation in the prize to appear in connection with Honda Australia Pty Ltd or the advertising or marketing thereof, in any media whatsoever throughout the world and the winner will not be entitled to any fee for such use.</li>
+                                <li>In the event that for any reason whatsoever a winner does not take an element of the prize at the time stipulated by The Promoter then that element of the prize will be forfeited by the winner and cash will not be awarded in lieu of that element of the prize.</li>
+                                <li>Prize values are based upon the recommended retail prices at the time of publication (inclusive of GST). The promoter accepts no responsibility for change in prize value between now and the ultimate prize redemption date. </li>
+                                <li>Independent financial advice should be sought as tax implications may arise as a result of accepting the prize.</li>
+                                <li>Should an entrant's contact details change during the promotional period, it is the entrant's responsibility to notify The Promoter. A request to access or modify any information provided in an entry should be directed to Promoter. </li>
+                                <li>Subject to any direction given under relevant State legislation, an unclaimed prize draw will take place at Salmat Digital Pty Limited, Level 2, 116 Miller Street, North Sydney NSW 2060 on Wednesday 13 November 2013 at 16:00 (AEDT). The winner will be notified within 2 days of the draw. The winner will be notified of their prize by email and will have their details published in the Public Notices section of The Australian newspaper on Monday 25 November 2013.</li>
+                                <li>The Promoter's decision is final and no correspondence will be entered into.</li>
+                                <li>It is a condition of accepting the prize that the winner must comply with all the conditions of use of the prize and the prize supplier's requirements.</li>
+                                <li>It is a condition of accepting the prize that the winner may be required to sign a legal release in a form determined by the Promoter in its absolute discretion.</li>
+                                <li>In the case of the intervention of any outside act, agent or event which prevents or significantly hinders The Promoter's ability to proceed with the competition on the dates and in the manner described in these terms and conditions, including but not limited to vandalism, power failures, tempests, natural disasters, acts of God, civil unrest, strike, war, act of terrorism, The Promoter may in its absolute discretion cancel the competition and recommence it from the start on the same conditions, subject to any directions given under State Regulation.</li>
+                                <li>The Promoter shall not be liable for any loss or damage whatsoever which is suffered (including but not limited to indirect or consequential loss) or for any personal injury suffered or sustained in connection with any prize/s except for any liability which cannot be excluded by law. The Promoter is not responsible for any incorrect or inaccurate information, either caused by the phone user or for any of the equipment or programming associated with or utilised in this competition, or for any technical error, or any combination thereof that may occur in the course of the administration of this competition including any omission, interruption, deletion, defect, delay in operation or transmission, communications line or telephone, mobile or satellite network failure, theft or destruction or unauthorised access to or alteration of entries.</li>
+                                <li>The Promoter reserves the right in its sole discretion to disqualify any individual who The Promoter has reason to believe has breached any of these conditions, or engaged in any unlawful or other improper misconduct calculated to jeopardise the fair and proper conduct of the promotion. The Promoter's legal rights to recover damages or other compensation from such an offender are reserved.</li>
+                                <li>Honda Australia Pty Ltd, Salmat Digital Pty Limited and their associated agencies and companies assume no responsibility for any error, omission, interruption, deletion, defect, delay in operation or transmission, communications line failure, theft or destruction or unauthorised access to, or alteration of entries, and reserves the right to take any action that may be available.</li>
+                                <li>If for any reason this competition is not capable of running as planned, including due to infection by computer virus, bugs, tampering, unauthorised intervention, fraud, technical failures or any causes beyond the control of The Promoter, which corrupt or affect the administration, security, fairness or integrity or proper conduct of this promotion, The Promoter reserves the right in its sole discretion to disqualify any individual who tampers with the entry process, take any action that may be available, and to cancel, terminate, modify or suspend the competition, subject to any direction given under State Regulation.</li>
+                                <li>All entries become the property of The Promoter. The Promoter collects personal information about you to enable you to participate in this promotion but no further use of this information will be made without prior consent.  </li>
+                                <li>All entries become the property of The Promoter. All entrants who opt-in to receive Honda related news and information will be entered into a database and The Promoter may use the entrant's names, addresses and telephone numbers for future promotional, marketing and publicity purposes in any media worldwide without notice and without any fee being paid unless otherwise advised by the entrant. By opting-in, entrants confirm that they allow their details to be used for this purpose. If entrants no longer consent to their details being used for future marketing purposes, the entrant should contact The Promoter on their details set out below. Any request to update, modify or delete the entrant's details should be directed to The Promoter.</li>
+                                <li>Alpha Salmon, on behalf of The Promoter, is collecting the entrant's personal information for the purpose of conducting and promoting this competition (including but not limited to determining and notifying winner). The entrant's personal information may be disclosed to Salmat Digital Pty Limited for this purpose. If you are not willing for this to occur you cannot participate in the Promotion.</li>
+                                <li>Entrants' personal information may be disclosed to State and Territory lottery departments and winners' names published as required under the relevant lottery legislation. For purposes of public statements and advertisements The Promoter will only publish the winner's surname, initial and state. A request to access, update or correct any information should be directed to The Promoter.</li>
+                                <li>Entry and continued participation in the promotion is dependent on entrants following and acting in accordance with the LinkedIn User Agreement, which can be viewed at
+                                    <a href="http://www.linkedin.com/static?key=user_agreement">http://www.linkedin.com/static?key=user_agreement</a></li>
+                                <li>This promotion is in no way sponsored, endorsed or administered by, or associated with, LinkedIn. Entrants understand that they are providing their information to the Promoter and not to LinkedIn. The information an entrant provides will only be used for the purposes outlined in these Terms and Conditions. Any questions, comments or complaints about this promotion must be directed to the Promoter and not to LinkedIn. LinkedIn will not be liable for any loss or damage or personal injury which is suffered or sustained by an entrant, as a result of participating in the promotion (including taking/use of a prize), except for any liability which cannot be excluded by law.</li>
+                                <li>The Promoter is Honda Australia Pty Ltd, ABN 66 004 759 611, of 95 Sharps Rd Tullamarine VIC 3043</li>
+                            </ol>
+                            <p>Authorised under NSW permit no: LTPS/13/04421  ACT permit no: TP13/02112</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="container cf">
+                <div class="links">
+                    <a href="#" class="popup-link" data-id="tandc">Terms and Conditions</a>
+                    <a href="/Home/PointDetail">Point Details</a>
+                    <span class="disclaimer">*Awarded as a Harvey Norman voucher. See T&amp;Cs for details</span>
+
+@*                    <a href="#" class="popup-link" data-id="privacy-policy">Privacy Policy</a>*@
+                </div>
+                <div class="social-links">
+                    <!-- AddThis Button BEGIN -->
+                    <div class="toolbox-main addthis_toolbox addthis_default_style addthis_16x16_style">
+                        <a class="addthis_button_linkedin">
+                            <img src="/Content/img/linkedin-icon.png" alt="Share to LinkedIn" /></a>
+                        <a class="addthis_button_facebook" addthis:url="@Request.Url.GetLeftPart(UriPartial.Authority)">
+                            <img src="/Content/img/fb-icon.png" alt="Share to Facebook" /></a>
+                        <a class="addthis_button_twitter" addthis:title="Share your ultimate Honda Accord A-Team and you could win Business Technology Products valued at $3k" addthis:url="@Request.Url.GetLeftPart(UriPartial.Authority)">
+                            <img src="/Content/img/tw-icon.png" alt="Share to Twitter" /></a>
+                        <a class="addthis_button_email" addthis:ui_email_note="Share your ultimate Honda Accord A-Team and you could win Business Technology Products valued at $3k">
+                            <img src="/Content/img/email-icon.png" alt="Share to Friends" /></a>
+                    </div>
+                    <!-- AddThis Button END -->
+                </div>
+            </div>
+        </footer>
+        <div id="popup-mask"></div>
+
+    </div>
+
+
+    @* Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline *@
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>      window.jQuery || document.write('<script src="/Content/js/jquery-1.9.1.min.js"><\/script>')</script>
+    @*    <script src="/Content/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="/Content/js/hoverIntent.min.js"></script>
+    <script src="/Content/js/ich.js"></script>
+    <script src="/Content/js/jquery.dotdotdot-1.5.9.min.js"></script>
+    <script src="/Content/js/as.utils.js"></script>
+    <script src="/Content/js/main.js"></script>*@
+
+    @* remove before live - just for testing, Data will be coming from ajax *@
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51be4e8316a3f55e"></script>
+    @Scripts.Render("~/bundles/all")
+
+    @* JavaScript at the bottom for fast page loading *@
+    @RenderSection("scripts", required: false)
+
+    <script id="connection" type="text/html">
+        <div class="connection" data-distance="{{ distance }}" data-id="{{ id }}"
+            {{#positions.values}} data-company="{{ company.name }}" data-title="{{ title }}" data-company-id="{{ company.id }}" {{/positions.values}} 
+            data-country="{{ location.country.code }}"
+            data-picture-url="{{ pictureUrl }}" data-name="{{ firstName }} {{ lastName }}">
+            <div class="headshot">
+                <img src="{{ pictureUrl }}" />
+            </div>
+            <div class="connection-info">
+                <h2 class="name" id="{{ id }}">{{ firstName }} {{ lastName }}</h2>
+                {{#positions.values}}
+                <h3 class="title" title="{{ title }}">{{ title }}</h3>
+                <p class="company" title="{{ company.name }}">at {{ company.name }}</p>
+                {{/positions.values}}
+            </div>
+        </div>
+    </script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-10599676-37', 'hondaaccordateam.com.au');
+        ga('send', 'pageview');
+
+    </script>
+
+@* end scripts *@
+
+
+</body>
+</html>

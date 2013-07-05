@@ -1,0 +1,179 @@
+﻿@{
+    ViewBag.Title = "Honda Accord A-Team";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script>
+    function loadDataFn() {
+        loadData();
+    }
+</script>
+<script type="IN/Login" data-onauth="loadDataFn"></script>
+
+<div class="content" id="confirmation">
+    <div class="header">
+        <h1 class="light">What A Team</h1>
+        <h2 class="light thankyou">Thank you for entering the Honda Accord A-Team competition. Thanks to the all-new Honda Accord, you are now in the draw to win!</h2>
+    </div>
+    <div class="total">
+        <h2>Total Points</h2>
+        <p class="points">@Model.TotalPoints</p>
+    </div>
+    <div class="member-summary">
+        <div class="member-info cf">
+            <img class="headshot" src="@Model.HighAchieverImageUrl" />
+            <div class="title">
+                <h2>@Model.HighAchieverName</h2>
+                <p>High Achiever</p>
+            </div>
+            <p class="info">Assertive and powerful, like the 3.5 litre SOHC i-VTEC V6 engine, you are at the ready to take on any challenge. Intelligent, charming, and eternally well-groomed, you've always found it easy to navigate the roads with the sort of poise and confidence few can imitate.</p>
+        </div>
+        <img src="~/Content/img/high-achiever-summary.jpg" />
+        <div class="points">@Model.HighAchieverPoints</div>
+    </div>
+    <div class="member-summary">
+        <div class="member-info cf">
+            <img class="headshot" src="@Model.SocialButterflyImageUrl" />
+            <div class="title">
+                <h2>@Model.SocialButterflyName</h2>
+                <p>Social Butterfly</p>
+            </div>
+            <p class="info">You are an outgoing individual who cleverly manoeuvres the social ecosphere. And because you love conversation, you'll love the Active Noise Control technology in the Accord – an advanced feature that counteracts obstructive outside noise. Bluetooth &reg; phone and audio connectivity effortlessly keep you connected to your world.</p>
+        </div>
+        <img src="~/Content/img/social-butterfly-summary.jpg" />
+        <div class="points">@Model.SocialButterflyPoints</div>
+    </div>
+    <div class="member-summary">
+        <div class="member-info cf">
+            <img class="headshot" src="@Model.OriginalThinkerImageUrl" />
+            <div class="title">
+                <h2>@Model.OriginalThinkerName</h2>
+                <p>Original Thinker</p>
+            </div>
+            <p class="info">Flexible, compliant, and perhaps a bit quirky, you are a visionary creative who always thinks ahead. Your quick intuition helps you navigate through potential hazards seamlessly, just like the revolutionary Advanced Driver Assist System on the all-new Honda Accord. You will always get great results because of your obsession for innovation.</p>
+        </div>
+        <img src="~/Content/img/original-thinker-summary.jpg" />
+        <div class="points">@Model.OriginalThinkerPoints</div>
+    </div>
+    <div class="member-summary">
+        <div class="member-info cf">
+            <img class="headshot" src="@Model.DependableImageUrl" />
+            <div class="title">
+                <h2>@Model.DependableName</h2>
+                <p>Dependable</p>
+            </div>
+            <p class="info">You are a well-organised individual, sensing change and adapting to your environment, just like the Accord's dusk-sensing auto headlights and rain-sensing wipers. Your attention to detail is second-to-none, picking up on the smallest problems and selflessly pitching in to solve them.</p>
+        </div>
+        <img src="~/Content/img/dependable-summary.jpg" />
+        <div class="points">@Model.DependablePoints</div>
+    </div>
+    <div class="member-summary">
+        <div class="member-info cf">
+            <img class="headshot" src="@Model.DiplomatImageUrl" />
+            <div class="title">
+                <h2>@Model.DiplomatName</h2>
+                <p>Diplomat</p>
+            </div>
+            <p class="info">You can keep your cool in any situation, aided by the i-Dual zone climate control with rear vents. People know to trust you, just like they do the Lane Watch blind spot monitoring system. You are diligent and level-headed, appearing relaxed in any situation – made particularly easy when sitting under your very own electric sunroof.</p>
+        </div>
+        <img src="~/Content/img/diplomat-summary.jpg" />
+        <div class="points">@Model.DiplomatPoints</div>
+    </div>
+    <div class="honda-summary">
+        <div class="member-info cf">
+            <img src="~/Content/img/honda-power-of-dreams.png" alt="Honda The Power of Dreams" />
+            <p><strong>Honda Australia</strong></p>
+            <p class="info">
+                About Honda Australia<br />
+                Official Distributor of Honda Cars, Motorcycles, Marine and Power Products in Australia.
+                <br />
+                A subsidiary of Honda Motor Co (Japan), Honda Australia is one of the leading importers and retailers of quality vehicles in Australia.
+                <br />
+                The Power of Dreams
+                <br />
+                The pursuit of dreams was intrinsic to the success of Soichiro Honda, the man who founded Honda. And to this day it remains the driving inspiration of Honda, the company. 
+            </p>
+        </div>
+        <p class="followers">
+<script type="IN/FollowCompany" data-id="450558" data-counter="right"></script>
+        </p>
+
+    </div>
+    <div id="scoreboard" class="cf">
+        <ul class="tabs">
+            <li>
+                <a href="#all" class="active">All Teams</a></li>
+            <li>
+                <a href="#network">Your Network</a></li>
+        </ul>
+        <div class="pages">
+            <div id="all" class="page">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td>Team</td>
+                            <td>First Last</td>
+                            <td>12352</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Team</td>
+                            <td>First Last</td>
+                            <td>12352</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Team</td>
+                            <td>First Last</td>
+                            <td>12352</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="network" class="page">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td>Network Team</td>
+                            <td>First Last</td>
+                            <td>12352</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Team</td>
+                            <td>First Last</td>
+                            <td>12352</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Team</td>
+                            <td>First Last</td>
+                            <td>12352</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="buttons floatright">
+        <a href="/" class="button two-line floatright">Submit another<br />
+            A-Team</a>
+        <div class="social-links">
+            <p class="light share-a-team">Share your A-Team</p>
+            <!-- AddThis Button BEGIN -->
+            <div id="toolbox-confirm" class="addthis_toolbox addthis_default_style addthis_16x16_style">
+                <a class="addthis_button_linkedin">
+                    <img src="/Content/img/linkedin-icon-white.png" alt="Share to LinkedIn" /></a>
+                <a class="addthis_button_facebook" addthis:url="@Request.Url.GetLeftPart(UriPartial.Authority)" addthis:description="Just created my Honda Accord A-Team to go in the draw to win Business Technology Products valued at $3k">
+                    <img src="/Content/img/fb-icon-white.png" alt="Share to Facebook" /></a>
+                <a class="addthis_button_twitter" addthis:title="Just created my Honda Accord A-Team to go in the draw to win Business Technology Products valued at $3k" addthis:url="@Request.Url.GetLeftPart(UriPartial.Authority)">
+                    <img src="/Content/img/tw-icon-white.png" alt="Share to Twitter" /></a>
+                <a class="addthis_button_email" addthis:ui_email_note="Just created my Honda Accord A-Team to go in the draw to win Business Technology Products valued at $3k">
+                    <img src="/Content/img/email-icon-white.png" alt="Share to Friends" /></a>
+            </div>
+            <!-- AddThis Button END -->
+        </div>
+    </div>
+</div>
+
